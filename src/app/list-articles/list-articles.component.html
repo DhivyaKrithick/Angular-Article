@@ -1,0 +1,20 @@
+<div class="container col-md-12" >
+  <div class="table-responsive table-container">  
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Author</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor= "let article of articles">
+          <td>{{article.title}}</td>
+          <td>{{article.description}}</td>
+          <td>{{article.author}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
