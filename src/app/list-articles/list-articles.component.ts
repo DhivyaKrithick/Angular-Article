@@ -24,5 +24,5 @@ export class ListArticlesComponent implements OnInit {
       this.articles = data;
     });
   };
-
+  p: number =1;
 }

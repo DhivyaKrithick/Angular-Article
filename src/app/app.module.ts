@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArticleService } from './article.service';
 import { ListArticlesComponent } from './list-articles/list-articles.component';
-
+import { NgxPaginationModule } from "ngx-pagination";
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { ListArticlesComponent } from './list-articles/list-articles.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [
     ArticleService

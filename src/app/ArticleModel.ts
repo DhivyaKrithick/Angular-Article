@@ -3,5 +3,5 @@ export class ArticleModel{
   title: String;
   description: String;
   author: String;
-  
+  tags: String;
 }
