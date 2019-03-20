@@ -1,0 +1,28 @@
+<div class="container" *ngFor="let articledetail of article">
+  <div class="row">
+    <div class="col-sm-4 col-xs-12 img-block">
+      <img class="img-bg" src="assets/map-hand.jpg" />
+    </div>
+
+    <div class="col-sm-6 col-xs-12">
+      <div class="articledetail-title">{{ articledetail.title }}</div>
+
+      <br />
+      <div>
+        <span class="glyphicon glyphicon-user detail-icon"></span> Author:
+        {{ articledetail.author }} &nbsp;&nbsp;&nbsp;
+        <span class="glyphicon glyphicon-calendar detail-icon"></span> Created
+        At: {{ articledetail.created_at }} &nbsp;&nbsp;&nbsp;
+        <span class="glyphicon glyphicon-calendar detail-icon"></span> Updated
+        At: {{ articledetail.updated_at }}
+      </div>
+      <br />
+      <div>{{ articledetail.description }}</div>
+      <br />
+      <div>
+        <span class="glyphicon glyphicon-tags detail-icon"></span>&nbsp;&nbsp;<i>
+          Tags: {{ articledetail.tags }}</i>
+      </div>
+    </div>
+  </div>
+</div>

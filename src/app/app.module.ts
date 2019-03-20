@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { ArticleService } from './article.service';
 import { ListArticlesComponent } from './list-articles/list-articles.component';
 import { NgxPaginationModule } from "ngx-pagination";
+import { DisplayArticleComponent } from './display-article/display-article.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListArticlesComponent
+    ListArticlesComponent,
+    DisplayArticleComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,6 @@
-.header-text{
-    font-size: 30px;
+.header-text {
+  font-size: 40px;
+  background-color: #30cbe3; /*For browsers that doesnot support Gradient */
+  background-image: linear-gradient(to bottom right, #30cbe3, #a080d5);
+  color: #fff;
 }

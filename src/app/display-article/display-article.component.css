@@ -1,0 +1,16 @@
+.img-bg {
+  max-width: 350px;
+}
+@media screen and (max-width: 1199px) and (min-width: 767px) {
+  .img-block {
+    width: 50%;
+  }
+}
+.articledetail-title {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+}
+.detail-icon {
+  color: #3397df;
+}

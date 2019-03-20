@@ -1,3 +1,26 @@
 .my-pagination /deep/ .ngx-pagination {
     text-align: center;
 }
+ul{
+    list-style-type: none;
+}
+#articles-table{
+    border-radius: 5px;
+    width: 70%;
+  margin: auto;
+    float: none;
+}
+.article-heading{
+  text-align: center !important;
+  font-size: 25px;
+  color:#30cbe3;
+}
+.view-btn{
+  background: #30cbe3;
+  border: none;
+  font-size: 16px;
+}
+.articles-title{
+  font-size: 20px;
+  font-weight: bold;
+}

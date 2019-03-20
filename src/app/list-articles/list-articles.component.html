@@ -1,24 +1,26 @@
 <div class="container col-md-12" >
-    <div class="table-responsive table-container">  
+    <div class="table-responsive table-container" id="articles-table">  
       <table class="table table-bordered">
         <thead>
           <tr>
-          <th>Title</th>
-          <th>Description</th>
-          <th>Author</th>
-          <th>Tags</th>
+          <th class="article-heading">Trending Stories</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor= "let article of articles | paginate: { itemsPerPage: 5, currentPage: p };">
-            <td>{{article.title}}</td>
-            <td>{{article.description}}</td>
-            <td>{{article.author}}</td>
-            <td>{{article.tags}}</td>
+          <tr *ngFor= "let article of articles | paginate: { itemsPerPage: 2, currentPage: p };">
+            <td>
+              <ul>
+                <br/>
+                <li class="articles-title"><i>{{article.title}}</i></li>
+                <br/>
+                <li class="description-text">{{article.description |  slice:0:250}}....</li>
+                <br/>
+                <li><button (click) = "displayArticle(article)" class="btn btn-primary view-btn">View More</button></li>
+              </ul> 
+            </td>
           </tr>
         </tbody>
       </table>
-      <pagination-controls class="my-pagination" (pageChange)="p = $event"></pagination-controls>
     </div>
-  </div>
-  
+</div>
+<pagination-controls class="my-pagination" (pageChange)="p = $event"></pagination-controls> 
